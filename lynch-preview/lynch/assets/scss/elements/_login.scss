@@ -1,0 +1,166 @@
+// Login Css Here
+.login_psge_section {
+    &.mb-80{
+        @media #{$small__mobile}{
+            margin-bottom: 60px;
+         }
+    }
+}
+.login_tab_btn{
+    &.mb-50{
+        @media #{$small__mobile}{
+            margin-bottom: 35px;
+         }
+    }
+    & ul{
+        justify-content: space-around !important;
+        & li{
+            
+            & a{
+                font-size: 30px;
+                line-height: 30px;
+                color: #000000;
+                text-transform: capitalize;
+                font-weight: 500;
+                padding: 0 10px 19px;
+                display: inline-block;
+                position: relative;
+                @media #{$small__mobile}{
+                    font-size: 22px;
+                    line-height: 26px;
+                    padding: 0 10px 15px;
+                 }
+                 @media #{$extra__small}{
+                    font-size: 20px;
+                    padding: 0 10px 13px;
+                 }
+                &.active{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background: $secondary__color;
+                    bottom: -1px;
+                    left: 0;
+                    transition: .3s;
+                    -webkit-transition: .3s;
+                    -moz-transition: .3s;
+                    -ms-transition: .3s;
+                    -o-transition: .3s;
+                }
+            }
+        }
+    }
+}
+.login_form_box {
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    @media #{$extra__small}{
+        padding: 20px;
+     }
+}
+.login__input {
+    margin-bottom: 30px;
+    @media #{$extra__small}{
+        margin-bottom: 25px;
+     }
+   & label{
+       display: block;
+       font-size: 15px;
+        line-height: 22px;
+        color: #666666;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        cursor: pointer;
+        & span{
+            color: $secondary__color;
+        }
+   }
+   & input{
+        background: none;
+        height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 5px;
+        background: #f7f7fb;
+        &:focus{
+            border-color: $secondary__color !important;
+            background: $white !important;
+        }
+    }
+    
+}
+
+.login_form_footer{
+    @media #{$extra__small}{
+        flex-direction: column;
+        align-items: flex-start !important;
+     }
+    & button{
+        background-color: #000000;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 20px;
+        padding: 0 25px;
+        &::before{
+            background: $secondary__color;
+            font-weight: 500;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        @media #{$extra__small}{
+            height: 36px;
+            line-height: 36px;
+            font-size: 13px;
+            margin-right: 0;
+            padding: 0 20px;
+         }
+    }
+    & p{
+        margin-bottom: 0;
+        & label{
+            & input{
+                vertical-align: middle;
+            }
+            font-weight: 500;
+            color: #666666;
+            font-size: 16px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        margin-right: 60px;
+        @media #{$small__mobile}{
+            margin-right: 40px;
+         }
+         @media #{$extra__small}{
+            font-size: 14px;
+            margin: 12px 0;
+         }
+    }
+    & a{
+        margin-bottom: 0;
+        font-weight: 500;
+        color: #666666;
+        font-size: 16px;
+        text-transform: capitalize;
+        display: inline-block;
+        @media #{$extra__small}{
+            font-size: 14px;
+         }
+        &:hover{
+            color:  $secondary__color;
+        }
+    }
+}

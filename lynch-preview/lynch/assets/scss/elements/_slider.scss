@@ -1,0 +1,402 @@
+//Slider Css
+.slider__section {
+    &.mb-80{
+        @media #{$small__mobile}{
+            margin-bottom: 60px;
+        }
+    }
+}
+.slider_bg_list{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    & .row{
+        height: 650px;
+        @media #{$extra__large__device}{
+            height: 600px;
+        }
+        @media #{$large__device}{
+           height: 500px;
+        }
+        @media #{$medium__device}{
+           height: 470px;
+        }
+        @media #{$small__mobile}{
+            height: 570px;
+        }
+        @media #{$extra__small}{
+            height: 510px;
+        }
+    }
+}
+
+.slider__text{
+    @media #{$small__mobile}{
+        text-align: center;
+        padding: 58px 0 30px;
+    }
+   
+    & h2{
+        font-size: 42px;
+        line-height: 45px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        @media #{$medium__device}{
+           font-size: 34px;
+            line-height: 33px;
+        }
+        @media #{$small__mobile}{
+            font-size: 35px;
+            line-height: 36px;
+        }
+        @media #{$extra__small}{
+            font-size: 23px;
+            line-height: 25px;
+            margin-bottom: 8px;
+        }
+    }
+    & h3{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 8px;
+        line-height: 24px;
+        @media #{$medium__device}{
+           font-size: 20px;
+        }
+        @media #{$small__mobile}{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        @media #{$extra__small}{
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+    & p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 40px;
+        @media #{$medium__device}{
+           margin-bottom: 30px;
+        }
+        @media #{$small__mobile}{
+            margin-bottom: 26px;
+        }
+        @media #{$extra__small}{
+            margin-bottom: 21px;
+            font-size: 14px;
+        }
+        
+    }
+}
+.slider_layer_img{
+    @media #{$small__mobile}{
+       text-align: center;
+    }
+    & img{
+        @media #{$small__mobile}{
+           width: 300px;
+            margin: 0 auto;
+        }
+        @media #{$extra__small}{
+            width: 230px;
+        }
+    }
+}
+.slick-current .slider__text h2,.slick-current .slider__text h3,.slick-current .slider__text p,.slick-current .slider__text a,.slick-current .slider_layer_img img{
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 0.5s; 
+}
+
+.slick-current .slider__text h2{
+    animation-delay: 0.7s; 
+}
+
+.slick-current .slider__text p{
+    animation-delay: 0.9s; 
+}
+
+.slick-current .slider__text a{
+    animation-delay: 1s; 
+}
+
+.home_slider_slick{
+    & .slick-dots{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        & li{
+            display: inline-block;
+            & button{
+                padding: 0;
+                width: 12px;
+                height: 12px;
+                margin: 3px;
+                display: inline-block;
+                border-radius: 50%;
+                border: 2px solid #000;
+                text-indent: -99999px;
+            }
+            &.slick-active{
+                & button{
+                    border-color: $secondary__color;
+                    background: $secondary__color;
+                }
+            }
+        }
+    }
+}
+
+//home two css here
+.s__section2{
+    & .row{
+        height: 850px;
+        @media #{$extra__large__device}{
+           height: 720px;
+        }
+        @media #{$large__device}{
+           height: 630px;
+        }
+        @media #{$medium__device}{
+           height: 520px;
+        }
+        @media #{$small__mobile}{
+            height: 460px;
+        }
+        @media #{$extra__small}{
+            height: 480px;
+        }
+    }
+    & .slider_bg_list{
+        @media #{$extra__large__device}{
+           background-position: 66%;
+        }
+        @media #{$large__device}{
+           background-position: 66%;
+        }
+        @media #{$medium__device}{
+           background-position: 90%;
+        }
+        @media #{$small__mobile}{
+            background-position: 5%;
+        }
+    }
+    & .slider__text {
+        @media #{$medium__device}{
+           padding-top: 50px;
+        }
+        @media #{$small__mobile}{
+            padding: 40px 0 0;
+        }
+        @media #{$extra__small}{
+            padding: 115px 0 0;
+        }
+        
+    }
+}
+
+//Home Four Css
+.home__slider4{
+    & .slider_bg_list{
+        height: 455px;
+        @media #{$large__device}{
+           height: 413px;
+        }
+        @media #{$medium__device}{
+           height: 400px;
+        }
+        @media #{$small__mobile}{
+            height: 350px;
+        }
+    }
+}
+
+.slider__text.text4{
+    padding-left: 50px;
+    @media #{$small__mobile}{
+        text-align: left;
+    }
+    @media #{$extra__small}{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+// home five css here
+.slider__section__five{
+    & .slider_bg_list{
+        & .row{
+            @media #{$small__mobile}{
+                height: 450px;
+            }
+            @media #{$extra__small}{
+                height: 400px;
+            }
+        }
+    }
+}
+
+.slider__text__padding{
+    @media #{$extra__large__device}{
+        padding-left: 50px;
+    }
+    & h3{
+        @media #{$large__device}{
+            font-size: 20px;
+        }
+    }
+    & h2{
+        @media #{$large__device}{
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+}
+
+.slider__text.text-right {
+    text-align: right;
+    @media #{$small__mobile}{
+        text-align: center;
+    }
+}
+
+// home six css jere
+.vidio_slider_section{
+    position: relative;
+    &.mb-80{
+        @media #{$small__mobile}{
+            margin-bottom: 60px;
+        }
+    }
+    & video{
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
+        position: relative;
+        object-position: 50% 50%;
+        & source{
+            width: 100%;
+        }
+        @media #{$extra__large__device}{
+            height: 680px;
+        }
+        @media #{$large__device}{
+            height: 570px;
+        }
+        @media #{$medium__device}{
+            height: 460px;
+        }
+        @media #{$small__mobile}{
+            height: 370px;
+        }
+        @media #{$extra__small}{
+            height: 340px;
+        }
+    }
+    & .slider__text{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translatey(-50%);
+        z-index: 9;
+        padding: 0 20px;
+        @media #{$extra__small}{
+            padding: 0 15px;
+        }
+        & h3{
+            font-size: 24px;
+            margin-bottom: 16px;
+            line-height: 24px;
+            @media #{$large__device}{
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+            @media #{$medium__device}{
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+            @media #{$small__mobile}{
+                font-size: 20px;
+                margin-bottom: 14px;
+                line-height: 22px
+            }
+            @media #{$extra__small}{
+                font-size: 18px;
+                line-height: 20px;
+            }
+            
+        }
+        & h2{
+            font-size: 65px;
+            line-height: 67px;
+            margin-bottom: 33px;
+            @media #{$large__device}{
+                font-size: 55px;
+                line-height: 58px;
+                margin-bottom: 28px;
+            }
+            @media #{$medium__device}{
+                font-size: 48px;
+                line-height: 52px;
+                margin-bottom: 29px;
+            }
+            @media #{$small__mobile}{
+                font-size: 40px;
+                line-height: 45px;
+                margin-bottom: 26px;
+            }
+            @media #{$extra__small}{
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.3;
+        left: 0;
+        top: 0;
+        z-index: 9;
+    }
+
+}
+
+
+// home eight css here
+.slider__lookbook{
+    & .slider_bg_list{
+        height: 650px;
+        position: relative;
+        @media #{$extra__large__device}{
+            height: 570px;
+        }
+        @media #{$large__device}{
+            height: 530px;
+         }
+         @media #{$medium__device}{
+            height: 450px;
+         }
+         @media #{$small__mobile}{
+            height: 400px;
+         }
+         @media #{$extra__small}{
+            height: 370px;
+        }
+    }
+}
+
+
+
