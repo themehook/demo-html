@@ -1,0 +1,192 @@
+//Quick View Css Here
+.quickview__dialog{
+    max-width: 800px;
+}
+.quickview__inner{
+    & button.close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9;
+    }
+}
+.quickview__sidebar{
+    & > h1{
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+.quickview__info{
+    margin-top: 10px;
+    & p{
+        margin-bottom: 0;
+        &.quickview__stock{
+            color: #88d626;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+    }
+}
+
+.variant__list{
+    margin-bottom: 15px;
+    & label{
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    &.color {
+        & ul{
+            & li{
+                margin-right: 6px;
+                line-height: 15px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                & a{
+                    width: 18px;
+                    height: 18px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    &.red{
+                       background: red; 
+                    }
+                    &.black{
+                       background: black; 
+                    }
+                    &.blue{
+                       background: blue; 
+                    }
+                    &.yellow{
+                       background: red; 
+                    }
+                }
+            }
+        }
+    }
+    &.size{
+        ul{
+            & li{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                & a{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    display: inline-block;
+                    background: #f9f9f9;
+                    border-radius: 5px;
+                    background-color: #f5f5f5;
+                    text-align: center;
+                    &:hover{
+                        color: $secondary__color;
+                    }
+                }
+            }
+        }
+    }
+    &.quantity {
+        & button.btn{
+            height: 42px;
+            line-height: 41px;
+            padding: 0 25px;
+            font-size: 13px;
+            &::before{
+                line-height: 42px;
+                font-size: 13px;
+            }
+        }
+    }
+    
+}
+
+.review__icon{
+    & i{
+        font-size: 18px;
+        color: #ffb503;
+        margin-right: 2px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.review__text{
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin-left: 10px;
+}
+
+
+
+.quickview__desc{
+    padding: 18px 0 20px;
+    & p{
+        color: #555;
+        line-height: 22px;
+        font-size: 13px;
+    }
+}
+
+.pro-qty{
+    text-align: center;
+    padding: 0 13px;
+    margin-right: 15px;
+    & input{
+        border: 0;
+        background: inherit;
+        width: 34px;
+        text-align: center;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    & a{
+        font-size: 22px;
+    }
+}
+
+.variant__wishlist{
+    & a{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        display: inline-block;
+        & i{
+            vertical-align: middle;
+        }
+        &:hover{
+            color: $secondary__color;
+        }
+    }
+}
+
+.quickview__social{
+    & label{
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    & ul{
+        & li{
+            margin-right: 15px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                font-size: 18px;
+                &:hover{
+                    color: $secondary__color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,1093 @@
+//Other Css Here
+.seciton__titile {
+    &.mb-40{
+        @media #{$small__mobile}{
+            margin-bottom: 30px;
+        }
+    }
+    & h2{
+        font-size: 26px;
+        line-height: 28px;
+        text-transform: capitalize;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 38px;
+            height: 2px;
+            background: #555;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(-50%);
+        }
+        @media #{$small__mobile}{
+            font-size: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 8px;
+            line-height: 19px;
+        }
+    }
+    & p{
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 20px;
+        color: #333;
+    }
+}
+
+// parallax section css here
+.home__parallax__banner {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        opacity: 0.3;
+        left: 0;
+        top: 0;
+    }
+    @media #{$medium__device}{
+        height: 700px;
+     }
+     @media #{$small__mobile}{
+        height: 630px;
+    }
+    @media #{$extra__small}{
+        height: 530px;
+     }
+}
+
+.parallax__text{
+    position: relative;
+    & h3{
+        font-size: 25px;
+        margin-bottom: 15px;
+        line-height: 26px;
+        color: #ffffff;
+        @media #{$large__device}{
+            font-size: 23px;
+            margin-bottom: 15px;
+            line-height: 24px;
+        }
+        @media #{$medium__device}{
+            font-size: 22px;
+            margin-bottom: 14px;
+            line-height: 23px;
+        }
+        @media #{$small__mobile}{
+            font-size: 20px;
+            margin-bottom: 12px;
+            line-height: 22px;
+        }
+        @media #{$extra__small}{
+            font-size: 18px;
+         }
+    }
+    & h2{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 15px;
+        color: #ffffff;
+        @media #{$large__device}{
+            font-size: 50px;
+            line-height: 50px;
+        }
+        @media #{$medium__device}{
+            font-size: 43px;
+            line-height: 45px;
+        }
+        @media #{$small__mobile}{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 12px;
+        }
+        @media #{$extra__small}{
+            font-size: 35px;
+            line-height: 38px;
+         }
+    }
+    & p{
+        font-size: 16px;
+        color: #ffffff;
+    }
+}
+
+
+
+//countdown Banner css
+.countdown_timer_banner{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+     @media #{$extra__large__device}{
+        height: 520px;
+    }
+    @media #{$large__device}{
+       height: 500px;
+    }
+    @media #{$medium__device}{
+       height: 450px;
+    }
+    @media #{$small__mobile}{
+        height: 310px;
+    }
+    @media #{$extra__small}{
+       height: 300px;
+    }
+    &.mb-75{
+        @media #{$small__mobile}{
+           margin-bottom: 58px;
+        }
+    }
+    
+}
+
+.countdown_timer_text{
+    & h3{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 12px;
+        line-height: 25px;
+        @media #{$medium__device}{
+            font-size: 20px;
+            margin-bottom: 8px;
+            line-height: 24px;
+        }
+        @media #{$small__mobile}{
+            font-size: 17px;
+            margin-bottom: 10px;
+            line-height: 20px;
+        }
+        @media #{$extra__small}{
+            font-size: 16px;
+            margin-bottom: 12px;
+            line-height: 17px;
+        }
+    }
+    & h2{
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 14px;
+        font-weight: 500;
+        @media #{$medium__device}{
+            font-size: 36px;
+            line-height: 35px;
+            margin-bottom: 12px;
+        }
+        @media #{$small__mobile}{
+            font-size: 30px;
+            line-height: 28px;
+            margin-bottom: 18px;
+        }
+        @media #{$extra__small}{
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 18px;
+        }
+    }
+}
+.timer__banner{
+    margin-bottom: 27px;
+    @media #{$small__mobile}{
+        margin-bottom: 26px;
+    }
+    @media #{$extra__small}{
+        margin-bottom: 22px;
+    }
+}
+.countdown__date{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.countdown__list{
+    margin-right: 22px;
+    padding-right: 22px;
+    position: relative;
+    text-align: center;
+    @media #{$medium__device}{
+        margin-right: 18px;
+        padding-right: 18px;
+    }
+    @media #{$small__mobile}{
+        margin-right: 15px;
+        padding-right: 17px;
+    }
+    @media #{$extra__small}{
+        margin-right: 13px;
+        padding-right: 15px;
+    }
+    &:last-child{
+        margin-right: 0;
+        padding-right: 0;
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+        
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background: #575757;
+        width: 4px;
+        height: 4px;
+        right: 0;
+        top: 12px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        background: #575757;
+        width: 4px;
+        height: 4px;
+        right: 0;
+        top: 30px;
+    }
+}
+.countdown__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    line-height: 34px;
+    @media #{$medium__device}{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    @media #{$small__mobile}{
+        font-size: 28px;
+        margin-bottom: 5px;
+        line-height: 26px;
+    }
+    @media #{$extra__small}{
+        font-size: 22px;
+        margin-bottom: 4px;
+        line-height: 22px;
+    }
+}
+.countdown__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #555;
+    @media #{$medium__device}{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media #{$small__mobile}{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    @media #{$extra__small}{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.timer_text_style2{
+    @media #{$small__mobile}{
+        text-align: center;
+    }
+    @media #{$extra__small}{
+        text-align: center;
+    }
+    & .countdown__date{
+        @media #{$small__mobile}{
+            justify-content: center;
+        }
+        @media #{$extra__small}{
+            justify-content: center;
+        }
+    }
+}
+.product_grid_items{
+    &:hover{
+        & .timer__style2{
+            opacity: 0;
+            visibility: hidden;
+            bottom: 10px;
+        }
+    }
+}
+.timer__style2{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    right: 30px;
+    background: #fff;
+    padding: 7px 5px;
+    border-radius: 5px;
+    transition: .3s;
+    @media #{$extra__small}{
+        bottom: 10px;
+        left: 5px;
+        right: 5px;
+        padding: 5px 3px;
+    }
+    & .countdown__number {
+        font-size: 18px;
+        margin-bottom: 5px;
+        line-height: 20px;
+        @media #{$extra__small}{
+            font-size: 15px;
+            margin-bottom: 3px;
+            line-height: 17px;
+        }
+    }
+    & .countdown__title {
+        font-size: 12px;
+        line-height: 15px;
+        @media #{$extra__small}{
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+    & .countdown__list{
+        margin-right: 0;
+        padding-right: 0;
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    & .countdown__date{
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+}
+
+
+//brand css here
+.brand__logo {
+    
+    &.mb-70{
+        @media #{$small__mobile}{
+           margin-bottom: 48px;
+        }
+    }
+}
+.brand__slick {
+    & .col{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+.brand__style4{
+    padding-bottom: 60px;
+}
+
+//Newsletter css here
+.newsletter__subscribe{
+    & h3{
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        line-height: 22px;
+        @media #{$large__device}{
+            font-size: 18px;
+            margin-bottom: 18px;
+            line-height: 20px;
+        }
+        @media #{$small__mobile}{
+            font-size: 18px;
+            margin-bottom: 19px;
+            line-height: 20px;
+        }
+    }
+    & form{
+        & input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #555;
+        }
+        & input::-moz-placeholder { /* Firefox 19+ */
+           color: #555;
+        }
+        & input:-ms-input-placeholder { /* IE 10+ */
+           color: #555;
+        }
+        & input:-moz-placeholder { /* Firefox 18- */
+           color: #555;
+        }
+        input{
+            width: 100%;
+            background: none;
+            color: #555;
+            height: 45px;
+            border-radius: 3px;
+            padding: 0 20px;
+            &:focus{
+                border-color: $secondary__color !important;
+            }
+        }
+        & button{
+            &.btn{
+                margin-top: 20px;
+                height: 40px;
+                line-height: 40px;
+                background: $primary__color;
+                padding: 0 22px;
+                font-size: 15px;
+                text-transform: capitalize;
+                font-weight: 500;
+                &::before{
+                    background: $secondary__color;
+                    line-height: 40px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.newsletter___banner {
+    height: 460px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    @media #{$large__device}{
+       height: 350px;
+    }
+    @media #{$medium__device}{
+      height: 315px;
+    }
+    @media #{$small__mobile}{
+        height: 256px;
+    }
+    &.mb-75{
+        @media #{$small__mobile}{
+           margin-bottom: 58px;
+        }
+    }
+    &.mb-80{
+        @media #{$small__mobile}{
+            margin-bottom: 60px;
+         }
+    }
+}
+.newsletter__content {
+    & h3{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        @media #{$medium__device}{
+            font-size: 25px;
+            line-height: 27px;
+            margin-bottom: 9px;
+        }
+        @media #{$small__mobile}{
+            font-size: 22px;
+            line-height: 25px;
+            margin-bottom: 8px;
+        }
+        @media #{$extra__small}{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    & p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0;
+        @media #{$small__mobile}{
+           font-size: 14px;
+        }
+    }
+}
+
+.newsletter__subscribe.style2{
+    margin-top: 40px;
+    @media #{$medium__device}{
+      margin-top: 30px;
+    }
+    @media #{$small__mobile}{
+        margin-top: 30px;
+    }
+    @media #{$extra__small}{
+        margin-top: 25px;
+    }
+    & form{
+        width: 580px;
+        position: relative;
+        margin: 0 auto;
+        @media #{$large__device}{
+           width: 530px;
+        }
+        @media #{$medium__device}{
+           width: 510px;
+        }
+        @media #{$small__mobile}{
+            width: 480px;
+        }
+        @media #{$extra__small}{
+           width: 100%;
+        }
+        & input{
+            background: $white;
+            @media #{$extra__small}{
+                height: 42px;
+            }
+        }
+        & button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background: $secondary__color;
+            padding: 0 22px;
+            font-size: 15px;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: $white;
+            border-radius: 3px;
+            &:hover{
+                background: $primary__color;
+            }
+            @media #{$extra__small}{
+                padding: 0 12px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+//instagram css here
+.instagram__area{
+    &.mb-80{
+        @media #{$small__mobile}{
+           margin-bottom: 60px;
+        }
+    }
+    
+    & .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    & .col-12{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.instagram_gallery {
+	display: flex;
+    overflow: hidden;
+    @media #{$small__mobile}{
+        flex-wrap: wrap;
+    }
+    & a.instagram-image{
+        position: relative;
+        overflow: hidden;
+        @media #{$small__mobile}{
+           width: 33.33%;
+        }
+        @media #{$extra__small}{
+            width: 50%;
+        }
+        &:hover{
+            transform: scale(1.1);
+            &::before{
+                opacity: 0.3;
+                
+            }
+            &::after{
+                opacity: 1;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            opacity: 0;
+            transition: .3s;
+        }
+        &::after{
+            position: absolute;
+            content: "\e73d";
+            font-family: 'themify';
+            font-size: 22px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            right: 0;
+            text-align: center;
+            color: #fff;
+            transition: .3s;
+            opacity: 0;
+        }
+    }
+}
+
+
+
+//Testimonial Css Here
+.testimonial__section{
+    background: #f6f6f8;
+    padding: 75px 0 73px;
+    @media #{$small__mobile}{
+        padding: 58px 0 54px;
+    }
+    &.mb-75{
+        @media #{$small__mobile}{
+            margin-bottom: 59px;
+        }
+    }
+}
+.testimonial__slick {
+    &:hover{
+        & > button{
+            opacity: 1;
+        }
+    }
+    & > button{
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        left: 50px;
+        padding: 0;
+        border: 0;
+        background: none;
+        font-size: 20px;
+        z-index: 9;
+        opacity: 0;
+        @media #{$medium__device}{
+           left: 20px;
+        }
+        @media #{$small__mobile}{
+            left: 0;
+        }
+        &:hover{
+            color: $secondary__color;
+        }
+        &.next_arrow {
+            right: 50px;
+            left: auto;
+            @media #{$medium__device}{
+               right: 20px;
+            }
+            @media #{$small__mobile}{
+                right: 0;
+            }
+        }
+        
+    }
+}
+.testimonial_grid_items{
+    & img{
+        width: 92px;
+        margin: 0 auto 21px;
+    }
+    & h3{
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        @media #{$extra__small}{
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 14px;
+        }
+    }
+    & p{
+        font-size: 15px;
+        line-height: 25px;
+        color: #555;
+        padding: 0 220px;
+        margin-bottom: 14px;
+        @media #{$large__device}{
+            padding: 0 138px;
+        }
+        @media #{$medium__device}{
+           padding: 0 63px;
+        }
+        @media #{$small__mobile}{
+            font-size: 14px;
+            line-height: 24px;
+            padding: 0 30px;
+        }
+        @media #{$extra__small}{
+            padding: 0 15px;
+            line-height: 23px;
+        }
+    }
+    & span{
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 20px;
+        color: #555;
+        & a{
+            color: $primary__color;
+            margin-right: 10px;
+            &:hover{
+                color: $secondary__color;
+            }
+        }
+    }
+}
+
+
+//Wishlist Page Css Here
+.wishlist__page {
+    @media #{$small__mobile}{
+        margin-bottom: 60px;
+    }
+}
+.wishlist_social_link {
+    margin-top: 30px;
+    @media #{$small__mobile}{
+        margin-top: 12px;
+        justify-content: center;
+    }
+    & span{
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: 500;
+        display: inline-block;
+        margin-right: 10px;
+        color: #555;
+    }
+    & ul{
+        & li{
+            margin-right: 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                font-size: 16px;
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                border-radius: 50%;
+                color: #555;
+                border: 1px solid #dee2e6;
+                display: inline-block;
+                &:hover{
+                    color: $secondary__color;
+                    border-color: $secondary__color;
+                }
+                @media #{$extra__small}{
+                    font-size: 15px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+.wishlist__cart{
+    & button{
+        background: #000000;
+        height: 39px;
+        line-height: 39px;
+        padding: 0 20px;
+        font-size: 14px;
+        width: 138px;
+        @media #{$small__mobile}{
+            height: 38px;
+            line-height: 38px;
+            padding: 0 10px;
+            font-size: 13px;
+            width: 130px;
+        }
+        &::before{
+            background: $secondary__color;
+            line-height: 39px;
+            font-size: 14px;
+            @media #{$small__mobile}{
+                line-height: 38px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.product__remove{
+    & a{
+        font-size: 18px;
+        color: #000000;
+        &:hover{
+            color: $secondary__color;
+        }
+        @media #{$small__mobile}{
+            font-size: 15px;
+        }
+    }
+}
+
+.wishlist__page{
+    & .cart__table{
+        & table {
+            & thead{
+                @media #{$small__mobile}{
+                    display: none;
+                }
+            }
+            & tbody {
+                &  tr{
+                    @media #{$small__mobile}{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        padding-bottom: 10px;
+                    }
+                    & > td{
+                        padding: 20px 50px 20px 0;
+                        @media #{$medium__device}{
+                           padding: 20px 30px 20px 0;
+                        }
+                        @media #{$small__mobile}{
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                        &:nth-child(2){
+                            width: 120px;
+                            @media #{$medium__device}{
+                               width: 105px;
+                            }
+                            @media #{$small__mobile}{
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                        &:nth-child(3){
+                            width: 160px;
+                            @media #{$medium__device}{
+                               width: 145px;
+                            }
+                            @media #{$small__mobile}{
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                        &:nth-child(4){
+                            width: 192px;
+                            @media #{$medium__device}{
+                               width: 174px;
+                            }
+                            @media #{$small__mobile}{
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(5){
+                            width: 25px;
+                            text-align: right;
+                            @media #{$small__mobile}{
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .cart__product{
+        @media #{$small__mobile}{
+            flex-direction: column;
+        }
+    }
+    & .cart_page_inner h1.cart__title{
+        @media #{$small__mobile}{
+            text-align: center;
+        }
+    }
+    & .cart__thumb {
+        @media #{$small__mobile}{
+            width: 110px;
+        }
+    }
+    & .cart__content{
+        @media #{$small__mobile}{
+            padding-left: 0;
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+}
+
+.product__stock{
+    & span{
+        font-size: 16px;
+        font-weight: 500;
+        color: #a6c76c;
+        &.out_of_stock{
+            color: $secondary__color;
+        }
+    }
+}
+
+
+
+// Error Page Css Here
+.error_psge_section{
+    padding: 107px 0 120px;
+    @media #{$medium__device}{
+        padding: 67px 0 80px;
+    }
+    @media #{$small__mobile}{
+        padding: 55px 0 60px;
+    }
+}
+.error_page_content {
+    & h1{
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 500;
+        margin-bottom: 42px;
+        @media #{$large__device}{
+            font-size: 70px;
+            line-height: 70px;
+        }
+        @media #{$medium__device}{
+            font-size: 65px;
+            line-height: 70px;
+            margin-bottom: 31px;
+        }
+        @media #{$small__mobile}{
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 27px;
+        }
+        @media #{$extra__small}{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 27px;
+        }
+    }
+    & h3{
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 14px;
+        @media #{$small__mobile}{
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 14px;
+        }
+        @media #{$extra__small}{
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 11px;
+        }
+    }
+    & p{
+        font-size: 15px;
+        line-height: 20px;
+        color: #555;
+        margin-bottom: 22px;
+        @media #{$extra__small}{
+            font-size: 15px;
+            line-height: 22px;
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+    }
+
+    & a.btn{
+        background: #000000;
+        &::before{
+            background: $secondary__color;
+        }
+    }
+    
+}
+
+
+
+
+
+
+// instagram css here
+.instagram__section{
+    &.mb-75{
+        @media #{$small__mobile}{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+.instagram__image{
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        & img{
+            transform: scale(1.1);
+        }
+        &::before{
+            opacity: 0.4;
+        }
+        & .instagram__icon{
+            opacity: 1;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        pointer-events: none;
+        transition: .3s;
+    }
+}
+
+
+.instagram__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9;
+    transition: .3s;
+    opacity: 0;
+    & a{
+        font-size: 25px;
+        color: #ffffff;
+        &:hover{
+            color: $secondary__color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

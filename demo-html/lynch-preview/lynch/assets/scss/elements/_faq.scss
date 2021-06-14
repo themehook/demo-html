@@ -1,0 +1,171 @@
+// Faq Css Here
+.faq_psge_section{
+    @media #{$small__mobile}{
+        margin-bottom: 60px;
+    }
+}
+.faq__title {
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    @media #{$small__mobile}{
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+    }
+    & h2{
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @media #{$large__device}{
+            font-size: 26px;
+            line-height: 28px;
+        }
+         @media #{$medium__device}{
+            font-size: 24px;
+            line-height: 26px;
+         }
+        @media #{$small__mobile}{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        @media #{$extra__small}{
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+}
+
+.face_ship_title{
+    & h3{
+        font-size: 25px;
+        line-height: 28px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @media #{$large__device}{
+            font-size: 23px;
+            line-height: 24px;
+        }
+        @media #{$medium__device}{
+            font-size: 22px;
+            line-height: 22px;
+         }
+         @media #{$small__mobile}{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @media #{$extra__small}{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+.face__steap{
+    &.one{
+        margin-bottom: 56px;
+        padding-bottom: 25px;
+        @media #{$small__mobile}{
+            padding-bottom: 27px;
+        }
+        & .faq__questions{
+            & h4{
+                &::before{
+                    display: none;
+                }
+                &[aria-expanded="false"]{
+                    &::before{
+                        display: block;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.two{
+        & .faq__questions{
+            & h4{
+                &::after{
+                    display: none;
+                }
+                &[aria-expanded="true"]{
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.faq__questions{
+    & h4{
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: block;
+        background: #f7f7fb;
+        padding: 8px 42px 8px 20px;
+        border-radius: 5px;
+        margin-bottom: 0;
+        position: relative;
+        cursor: pointer;
+        @media #{$large__device}{
+            font-size: 16px;
+        }
+        @media #{$medium__device}{
+            font-size: 16px;
+            line-height: 26px;
+         }
+         @media #{$small__mobile}{
+            font-size: 15px;
+            line-height: 25px
+        }
+        &::before{
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 18px;
+            transform: translatey(-50%);
+            content: "\f104";
+            font-family: "Ionicons";
+            cursor: pointer;
+            font-size: 16px;
+        }
+        &::after{
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 18px;
+            transform: translatey(-50%);
+            content: "\f10d";
+            font-family: "Ionicons";
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}
+.faq__payment{
+    @media #{$medium__device}{
+        margin-bottom: 40px;
+     }
+     @media #{$small__mobile}{
+        margin-bottom: 58px;
+    }
+}
+.faq__desc{
+    padding-top: 12px;
+    & p{
+        line-height: 26px;
+        color: #555555;
+        @media #{$small__mobile}{
+            line-height: 24px;
+        }
+    }
+}
+
